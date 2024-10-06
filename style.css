@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+ --primeiracor: #000000;
+ --segunda_cor: #D9D9D9;
+ --terceira_cor: #0442BF;
+ --quarta_Cor: #034AA6;
+ --fonte: "Montserrat", sans-serif;
+}
+
+
+.corpo{
+    background-color: var(--primeiracor);
+    font-family: var(--fonte);
+    color: var(--segunda_cor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#num1, #num2{
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0; 
+    border: 2px solid #333; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    background-color: #f0f0f0; 
+    color: var(--quarta_Cor);
+    outline: none; 
+}
+
+#botao-soma,#botao-sub,#botao-mult,#botao-div{
+    background-color: var(--terceira_cor);
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+#botao-soma,#botao-sub,#botao-mult,#botao-div:hover{
+    transform: scale(0.9);
+    transition: ease-out 0.5s;
+    background: linear-gradient(90deg, #0439D9, #034AA6, #0442BF);
+}
